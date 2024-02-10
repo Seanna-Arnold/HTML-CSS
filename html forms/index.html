@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Painting Registration Form</h1>
+    <p id="description">Please fill out this form with the required information and we'll get you on the schedule in no time!</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> First Name: <input id="name" name="name" type="text" placeholder="Jane" required /></label>
+        <label for="last-name"> Last Name: <input id="last-name" name="last-name" type="text" placeholder="Smith" required /></label>
+        <label for="email" id="email-label"> Email: <input id="email" name="email" type="email" placeholder="jane.smith@gmail.com" required /></label>
 
+        <label for="phone-number"> Phone Number: <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123) 456 7890" required /></label>
+
+        <label for="number" id="number-label"> Age: <input id="number" name="age" type="number" min="16" max="120" placeholder="minimum age is 16"required /></label>
+
+      </fieldset>
+      <fieldset>
+        <legend class="experience">What is your experience level? (required)</legend>
+
+        <label for="beginner">
+          <input type="radio" id="beginner" value="beginner" name="experience" class="inline"> beginner</label>
+
+        <label for="intermediate">
+          <input type="radio" id="intermediate"value="intermediate" name="experience" class="inline"> intermediate</label>
+
+        <label for="advanced">
+          <input  type="radio" id="advanced" value="advanced" name="experience" class="inline" > advanced</label>
+
+      </fieldset>
+
+            <fieldset>
+        <legend class="day">Which days are you signing up for? (required)</legend>
+        <label for="Tuesday"><input id="Tuesday" type="checkbox" name="which-days" class="inline" value="Tuesday" checked /> Tuesday</label>
+        <label for="Thursday"><input id="Thursday" type="checkbox" name="which-days" class="inline" value="Thursday"/> Thursday</label>
+        <label for="Saturday"><input id="Saturday" type="checkbox" name="which-days" class="inline" value="Saturday" /> Saturday</label>
+
+      </fieldset>
+
+
+      <fieldset>
+
+        <label for="medium">What medium are you most interested in?
+          <select id="dropdown" name="medium">
+            <option value="">(select one)</option>
+            <option value="1">oil</option>
+            <option value="2">watercolors</option>
+            <option value="3">acrylic</option>
+            <option value="4">other</option>
+          </select>
+        </label>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I really want to paint a landscape..."></textarea>
+        </label>
+      </fieldset>
+      
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
