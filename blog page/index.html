@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1533208087231-c3618eab623c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fGFic3RyYWN0JTIwYXJ0fGVufDB8fDB8fHww');
+      background-size: cover;
+      color: white;
+      
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 30px;
+      background: rgba(0,0,0,.3);
+      border-bottom: 1px solid white;
+    }
+    li {
+      display: inline;
+      padding: 5px 10px 5px 10px;
+      font-size: 15px;
+      border: 2px solid white;
+      margin: 30;
+      border-radius: 4px;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .profile-pic {
+      height: 400
+    }
+    
+    h1 {
+      color: #0D2230;
+      font-family: 'Helvetica';
+    }
+    
+    button {
+      background-color: pink;
+      font-family: 'Helvetica'; 
+    }
+    
+    
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 34px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+        font-size: 12px;
+      }
+      
+      .profile-pic {
+        height: 200;
+      }
+    
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Art Gallery</a></li>
+      <li><a href="#">Art Blog</a></li>
+    </ul>
+    <img class="profile-pic" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww">
+    <h1>Blair's Art Journey</h1>
+
+  </header>
+  <article>
+    <h2>Art and Therapy </h2>
+    <p>Engaging in art is my therapeutic sanctuary, where the strokes of creation become a gentle balm, soothing the chaos within and offering a serene refuge for introspection and healing.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Art and "Soul"</h2>
+    <p>For me, abstract art is a raw and personal emotional diary, each stroke, swirl, and burst of color echoes the intricate nuances of my feelings, creating a visual symphony that speaks directly to the depths of my soul.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Art and Self Discovery</h2>
+    <p>Immersing myself in the world of art has been a transformative journey, a kaleidoscope of self-discovery and resilience, where every brushstroke and creative endeavor has sculpted the canvas of my personal growth.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
